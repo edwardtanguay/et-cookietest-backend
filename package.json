@@ -2,7 +2,7 @@
   "name": "et-heroku-cookie-test",
   "version": "1.0.0",
   "description": "",
-  "type":"module",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "npx nodemon server.js"
@@ -11,7 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "morgan": "^1.10.0"
