@@ -11,7 +11,7 @@ const app = express();
 app.use(morgan("dev"));
 app.set('trust proxy', 1);
 app.use(cors({
-	origin: process.env.NODE_ENV !== "development" ? process.env.FRONTEND_ORIGIN : [process.env.FRONTEND_ORIGIN_HTTP, process.env.FRONTEND_ORIGIN_HTTPS],
+	origin: process.env.NODE_ENV !== "production" ? process.env.FRONTEND_ORIGIN : [process.env.FRONTEND_ORIGIN_HTTP, process.env.FRONTEND_ORIGIN_HTTPS],
 	credentials: true
 }));
 
