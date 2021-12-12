@@ -11,7 +11,8 @@ const app = express();
 app.use(morgan("dev"));
 app.set('trust proxy', 1);
 app.use(cors({
-	origin: process.env.FRONTEND_ORIGIN,
+	// origin: process.env.FRONTEND_ORIGIN,
+	origin: ["http://et-cookietest-frontend.herokuapp.com","https://et-cookietest-frontend.herokuapp.com"],
 	credentials: true
 }));
 
